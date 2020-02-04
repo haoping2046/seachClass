@@ -21,7 +21,7 @@ from products.views import *
 
 
 urlpatterns = [
-	path('', home_view, name='home'),
+	path('home/', home_view, name='home'),
 	path('course/', course_view, name='course'),
     path('plan/', plan_view, name='plan'),
     path('admin/', admin.site.urls),
