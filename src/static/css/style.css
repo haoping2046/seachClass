@@ -112,3 +112,17 @@ a:hover {
 .plan-course-name {
     padding-top: 1em;
 }
+
+
+
+.form-check-inline {
+    width: 100%;
+}
+
+.myplan-left {
+    width: 50%;
+}
+
+.myplan-right {
+    width: 50%;
+}
