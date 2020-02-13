@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # owner
     'pages',
     'products',
+    'policy',
 
 ]
 

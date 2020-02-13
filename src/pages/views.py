@@ -22,6 +22,4 @@ def plan_view(request, *args, **kwargs):
 	# return HttpResponse("<h1>Hello world</h1>")
 	return render(request, "plan.html", {})
 
-def policy_view(request, *args, **kwargs):
 
-	return render(request, "policy.html", {})

@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="select-level">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="../course">Graduate</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../plan">My Plan</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">M.Eng. Policy</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../mspolicy">M.S. Policy</a>
+        </li>
+
+    </ul>
+</div>
+
+
+<div class="timeC"><img src="../static/image/policy.svg">Breadth Requirement</div>
+<div class="card">
+    <div class="card-body">
+        <h7 class="card-text">{{ object.Breadth_Requirement | linebreaksbr}}</h7>
+    </div>
+</div>
+
+{% if object.Depth_Requirement != None and object.Depth_Requirement != '' %}
+<div class="timeC"><img src="../static/image/policy.svg">Depth Requirement</div>
+<div class="card">
+    <div class="card-body">
+        <h7 class="card-text">{{ object.Depth_Requirement | linebreaksbr}}</h7>
+    </div>
+</div>
+{% endif %}
+
+{% if object.Theoretical_Computer_Science != None and object.Theoretical_Computer_Science != '' %}
+<div class="timeC"><img src="../static/image/policy.svg">Theoretical Computer Science</div>
+<div class="card">
+    <div class="card-body">
+        <h7 class="card-text">{{ object.Theoretical_Computer_Science }}</h7>
+    </div>
+</div>
+{% endif %}
+
+{% if object.Blanket_Credits != None and object.Blanket_Credits != '' %}
+<div class="timeC"><img src="../static/image/policy.svg">Blanket Credits</div>
+<div class="card">
+    <div class="card-body">
+        <h7 class="card-text">{{ object.Blanket_Credits | linebreaksbr}}</h7>
+    </div>
+</div>
+{% endif %}
+
+{% if object.Blanket_Credits != None and object.Thesis_or_Project != '' %}
+<div class="timeC"><img src="../static/image/policy.svg">Thesis or Project</div>
+<div class="card">
+    <div class="card-body">
+        <h7 class="card-text">{{ object.Thesis_or_Project | linebreaksbr}}</h7>
+    </div>
+</div>
+{% endif %}
+
+{% if object.Blanket_Credits != None and object.Responsible_Conduct_of_Research_Training != '' %}
+<div class="timeC"><img src="../static/image/policy.svg">Responsible Conduct of Research Training</div>
+<div class="card">
+    <div class="card-body">
+        <h7 class="card-text">{{ object.Responsible_Conduct_of_Research_Training | linebreaksbr}}</h7>
+    </div>
+</div>
+{% endif %}
+
+{% if object.Blanket_Credits != None and object.EECS_Colloquium != '' %}
+<div class="timeC"><img src="../static/image/policy.svg">EECS Colloquium</div>
+<div class="card">
+    <div class="card-body">
+        <h7 class="card-text">{{ object.EECS_Colloquium | linebreaksbr}}</h7>
+    </div>
+</div>
+{% endif %}
+
+{% if object.Blanket_Credits != None and object.Total_Graduate_Credits != '' %}
+<div class="timeC"><img src="../static/image/policy.svg">Total Graduate Credits</div>
+<div class="card">
+    <div class="card-body">
+        <h7 class="card-text">{{ object.Total_Graduate_Credits }}</h7>
+    </div>
+</div>
+{% endif %}
+
+{% if object.Blanket_Credits != None and object.EECS_Colloquium != '' %}
+<div class="timeC"><img src="../static/image/policy.svg">Basic Requirement</div>
+<div class="card">
+    <div class="card-body">
+        <h7 class="card-text">{{ object.Basic_Requirement | linebreaksbr}}</h7>
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}
