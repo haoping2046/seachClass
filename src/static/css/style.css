@@ -51,6 +51,7 @@ a:hover {
     /*background-color: antiquewhite;*/
     margin: 0.5em 0px 0.1em;
     font-size: 22px;
+    width: 92%;
 }
 
 .timeC img {
@@ -107,10 +108,8 @@ a:hover {
 
 .content-bottom {
     position: relative;
-    /*margin: 0em 0em 0em 0em;*/
     left: 1em;
     bottom: 0.4em;
-    /*margin: 1em 1em 0.4em 1em;*/
     max-width: 94%;
     flex: 100%;
 }
@@ -138,4 +137,15 @@ a:hover {
     width: 50%;
 }
 
+.second-level {
+    margin: 1em 0em;
+}
 
+.btn-secondary{
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+
+dropdown-item:active, .dropdown-item:focus, .open>.dropdown-toggle.dropdown-item {
+    background-color: #d73f09;
+}
