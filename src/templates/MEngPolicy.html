@@ -18,7 +18,7 @@
 </div>
 
 <div class="form-check form-check-inline">
-    <div class="timeC"><img src="../static/image/policy.svg">Breadth Requirement</div>
+    <div class="timeC"><img src="../static/image/breadth.svg">Breadth Requirement</div>
 
     <div class="btn-group">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -38,7 +38,7 @@
 </div>
 
 {% if object.Depth_Requirement != None and object.Depth_Requirement != '' %}
-<div class="timeC"><img src="../static/image/policy.svg">Depth Requirement</div>
+<div class="timeC"><img src="../static/image/depth.svg">Depth Requirement</div>
 <div class="card">
     <div class="card-body">
         <h7 class="card-text">{{ object.Depth_Requirement | linebreaksbr}}</h7>
@@ -47,7 +47,7 @@
 {% endif %}
 
 {% if object.Theoretical_Computer_Science != None and object.Theoretical_Computer_Science != '' %}
-<div class="timeC"><img src="../static/image/policy.svg">Theoretical Computer Science</div>
+<div class="timeC"><img src="../static/image/theoretical.svg">Theoretical Computer Science</div>
 <div class="card">
     <div class="card-body">
         <h7 class="card-text">{{ object.Theoretical_Computer_Science }}</h7>
@@ -56,7 +56,7 @@
 {% endif %}
 
 {% if object.Blanket_Credits != None and object.Blanket_Credits != '' %}
-<div class="timeC"><img src="../static/image/policy.svg">Blanket Credits</div>
+<div class="timeC"><img src="../static/image/blanket.svg">Blanket Credits</div>
 <div class="card">
     <div class="card-body">
         <h7 class="card-text">{{ object.Blanket_Credits | linebreaksbr}}</h7>
@@ -65,7 +65,7 @@
 {% endif %}
 
 {% if object.Blanket_Credits != None and object.Thesis_or_Project != '' %}
-<div class="timeC"><img src="../static/image/policy.svg">Thesis or Project</div>
+<div class="timeC"><img src="../static/image/thesis.svg">Thesis or Project</div>
 <div class="card">
     <div class="card-body">
         <h7 class="card-text">{{ object.Thesis_or_Project | linebreaksbr}}</h7>
@@ -74,7 +74,7 @@
 {% endif %}
 
 {% if object.Blanket_Credits != None and object.Responsible_Conduct_of_Research_Training != '' %}
-<div class="timeC"><img src="../static/image/policy.svg">Responsible Conduct of Research Training</div>
+<div class="timeC"><img src="../static/image/responsible.svg">Responsible Conduct of Research Training</div>
 <div class="card">
     <div class="card-body">
         <h7 class="card-text">{{ object.Responsible_Conduct_of_Research_Training | linebreaksbr}}</h7>
@@ -83,7 +83,7 @@
 {% endif %}
 
 {% if object.Blanket_Credits != None and object.EECS_Colloquium != '' %}
-<div class="timeC"><img src="../static/image/policy.svg">EECS Colloquium</div>
+<div class="timeC"><img src="../static/image/colloquium.svg">EECS Colloquium</div>
 <div class="card">
     <div class="card-body">
         <h7 class="card-text">{{ object.EECS_Colloquium | linebreaksbr}}</h7>
@@ -92,7 +92,7 @@
 {% endif %}
 
 {% if object.Blanket_Credits != None and object.Total_Graduate_Credits != '' %}
-<div class="timeC"><img src="../static/image/policy.svg">Total Graduate Credits</div>
+<div class="timeC"><img src="../static/image/credits.svg">Total Graduate Credits</div>
 <div class="card">
     <div class="card-body">
         <h7 class="card-text">{{ object.Total_Graduate_Credits }}</h7>
@@ -101,7 +101,7 @@
 {% endif %}
 
 {% if object.Blanket_Credits != None and object.EECS_Colloquium != '' %}
-<div class="timeC"><img src="../static/image/policy.svg">Basic Requirement</div>
+<div class="timeC"><img src="../static/image/basic.svg">Basic Requirement</div>
 <div class="card">
     <div class="card-body">
         <h7 class="card-text">{{ object.Basic_Requirement | linebreaksbr}}</h7>
