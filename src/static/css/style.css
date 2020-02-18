@@ -97,6 +97,9 @@ a:hover {
     margin-bottom: 0.5em;
 }
 
+.card-body {
+    padding: 0.85rem 1.25rem;
+}
 .card-body2 {
     padding: 0em 0em 0em 0em;
 }
@@ -115,7 +118,7 @@ a:hover {
 }
 
 .right {
-    position: relative;
+    /*position: relative;*/
     /*left: 30em;*/
     float: right;
 }

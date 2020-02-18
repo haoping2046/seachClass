@@ -30,4 +30,8 @@ urlpatterns = [
     path('home/', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('product/', product_detail_view),
+    # path('create/', product_create_view),
+    path('initial/', render_initial_data),
+
+    path('weather/', product_create_view)
 ]
