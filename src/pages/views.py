@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
-import scrapy
+# import scrapy
 
 
 def home_view(request, *args, **kwargs):
@@ -19,15 +19,15 @@ def home_view(request, *args, **kwargs):
 
 def course_view(request, *args, **kwargs):
     name = "course"
-    start_urls = ["https://stackoverflow.com/questions?sort=votes"]
+    # start_urls = ["https://stackoverflow.com/questions?sort=votes"]
 
     return render(request, "course.html", {})
 
 
-def parse(self, response):
-    for href in response.css('.question-summary h3 a::attr(href)'):
-        full_url = response.urljoin(href.extract())
-        yield scrapy.Request(full_url, callback=self.parse_question)
+# def parse(self, response):
+#     for href in response.css('.question-summary h3 a::attr(href)'):
+#         full_url = response.urljoin(href.extract())
+#         yield scrapy.Request(full_url, callback=self.parse_question)
 
 
 def parse_qustion(self, response):
