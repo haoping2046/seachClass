@@ -15,6 +15,7 @@ function Submit() {
 }
 
 
+<<<<<<< HEAD
 
 $(document).ready(function(){
   $("button").click(function(){
@@ -22,6 +23,8 @@ $(document).ready(function(){
   });
 });
 
+=======
+>>>>>>> 7ec0df9e379cef1a0a05c3aebddd9fda5269a02c
 //JS回顾：
 //字符串
 console.log("hello".length);
