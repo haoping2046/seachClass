@@ -1,11 +1,10 @@
-import os
-import sys
-import warnings
-
 # opcode is not a virtualenv module, so we can use it to find the stdlib
 # Important! To work on pypy, this must be a module that resides in the
 # lib-python/modified-x.y.z directory
 import opcode
+import os
+import sys
+import warnings
 
 dirname = os.path.dirname
 

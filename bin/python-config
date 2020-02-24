@@ -1,7 +1,7 @@
 #!/Users/pinghao/dev/trydjango/bin/python
 
-import sys
 import getopt
+import sys
 import sysconfig
 
 valid_opts = ['prefix', 'exec-prefix', 'includes', 'libs', 'cflags',

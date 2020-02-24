@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 
 
+
 {% block content %}
+<script src="../static/js/main.js"></script>
+
 <div class="select-level">
     <ul class="nav nav-pills">
         <li class="nav-item">
@@ -11,13 +14,13 @@
             <a class="nav-link active" href="#">My Plan</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="../policy">Policy</a>
+            <a class="nav-link" href="../mepolicy">Policy</a>
         </li>
 
     </ul>
 </div>
 
-
+<!--<form action="../static/js/main.js" method="POST">-->
 <div class="timeC"><img src="../static/image/spring.png">Spring term</div>
 
 <div class="card">
@@ -456,6 +459,18 @@
 
     </div>
 </div>
+<br>
+    <button id="confirm" type="button" class="btn btn-primary btn-lg">Confirm</button>
+<p id="credit">Credit: 0</p>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me</button>
+<!--</form>-->
+
 
 
 

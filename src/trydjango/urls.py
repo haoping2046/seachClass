@@ -18,14 +18,20 @@ from django.urls import path
 
 from pages.views import *
 from products.views import *
+from policy.views import *
 
 urlpatterns = [
     path('', course_view, name='course'),
     path('course/', course_view, name='course'),
     path('plan/', plan_view, name='plan'),
-    path('policy/', policy_view, name='policy'),
+    path('mepolicy/', ME_policy_view, name='mepolicy'),
+    path('mspolicy/', MS_policy_view, name='mspolicy'),
 
     path('home/', home_view, name='home'),
     path('admin/', admin.site.urls),
     path('product/', product_detail_view),
+    # path('create/', product_create_view),
+    path('initial/', render_initial_data),
+
+    path('weather/', product_create_view)
 ]
