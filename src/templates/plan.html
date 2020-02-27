@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 
 
-
 {% block content %}
 <script src="../static/js/main.js"></script>
 
@@ -20,7 +19,6 @@
     </ul>
 </div>
 
-<!--<form action="../static/js/main.js" method="POST">-->
 <div class="timeC"><img src="../static/image/spring.png">Spring term</div>
 
 <div class="card">
@@ -28,148 +26,142 @@
         <h6><b>Theoretical Computer Science</b></h6>
 
         <div class="form-check form-check-inline">
-            <div class="myplan-left">
-                <input class="form-check-input" type="checkbox" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">
+<!--            <div class="myplan-left">-->
+                <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+                <label class="form-check-label">
                     CS517 | THEORY OF COMPUTATION
                 </label>
-            </div>
-
-            <div class="myplan-right">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">
+<!--            </div>-->
+        </div>
+        <div class="form-check form-check-inline">
+<!--            <div class="myplan-right">-->
+                <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+                <label class="form-check-label">
                     CS523 | ADVANCED ALGORITHMS
-                    <small class="text-muted">(Recommend: CS515)</small>
                 </label>
-            </div>
+                <small class="text-muted">(Recommend: CS515)</small>
+<!--            </div>-->
         </div>
 
 
         <h6 class="plan-course-name"><b>Artificial Intelligence</b></h6>
         <div class="form-check form-check-inline">
-            <div class="myplan-left">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">
-                    CS533 | INTELLIGENT AGENTS AND DECISION MAKING
-                    <small class="text-muted">(Recommend: CS531)</small>
-                </label>
-            </div>
-
-            <div class="myplan-right">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">
-                    CS537 | COMPUTER VISION I
-                </label>
-            </div>
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
+                CS533 | INTELLIGENT AGENTS AND DECISION MAKING
+            </label>
+            <small class="text-muted">(Recommend: CS531)</small>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
+                CS537 | COMPUTER VISION I
+            </label>
         </div>
 
 
         <div class="form-check form-check-inline">
-            <div class="myplan-left">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 CS539 | NONLINEAR OPTIMIZATION
             </label>
-            </div>
-
-            <div class="myplan-right">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 CS539 | MATRX ANSYS SIG PROC&MACH
             </label>
-            </div>
-
         </div>
 
 
         <h6 class="plan-course-name"><b>Computer Systems</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 CS570 | HIGH PERFORMANCE COMPUTER ARCHITECTURE
-                <small class="text-muted">(Recommend: ECE472 or ECE572)</small>
             </label>
+            <small class="text-muted">(Recommend: ECE472 or ECE572)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 CS572 | COMPUTER ARCHITECTURE
-                <small class="text-muted">(Recommend: ECE375)</small>
             </label>
+            <small class="text-muted">(Recommend: ECE375)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 CS575 | INTRODUCTION TO PARALLEL PROGRAMMING
             </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 CS544 | OPERATING SYSTEMS II
-                <small class="text-muted">(Recommend: CS311 or CS344) and (CS271 or ECE375)</small>
             </label>
+            <small class="text-muted">(Recommend: CS311 or CS344) and (CS271 or ECE375)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 CS544 | BIG DATA ANALYTICS
-                <small class="text-muted">(Recommend: 540)</small>
             </label>
+            <small class="text-muted">(Recommend: 540)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 ECE574 | VLSI SYSTEM DESIGN
-                <small class="text-muted">(Recommend: ECE322 or ECE375)</small>
             </label>
+            <small class="text-muted">(Recommend: ECE322 or ECE375)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 ECE577 | MULTIMEDIA SYSTEMS
-                <small class="text-muted">(Recommend: ECE375)</small>
             </label>
+            <small class="text-muted">(Recommend: ECE375)</small>
         </div>
 
         <h6 class="plan-course-name"><b>Programming Languages</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 CS583 | ADVANCED FUNCTIONAL PROGRAMMING
-                <small class="text-danger">(Prerequisite: CS581)</small>
             </label>
+            <small class="text-danger">(Prerequisite: CS581)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 CS585 | DOMAIN-SPECIFIC LANGUAGES
-                <small class="text-danger">(Prerequisite: CS581)</small>
             </label>
+            <small class="text-danger">(Prerequisite: CS581)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 CS563 | SOFTWARE MAINTENANCE AND EVOLUTION
-                <small class="text-danger">(Prerequisite: CS561)</small>
             </label>
+            <small class="text-danger">(Prerequisite: CS561)</small>
         </div>
 
         <h6 class="plan-course-name"><b>Human Computer Interaction</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 CS565 | HUMAN-COMPUTER INTERACTION
             </label>
         </div>
 
         <h6 class="plan-course-name"><b>Computer Vision and Graphics</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="spring" onclick="check()">
+            <label class="form-check-label">
                 CS551 | COMPUTER GRAPHICS
-                <small class="text-muted">(Recommend: CS450 or CS550)</small>
             </label>
+            <small class="text-muted">(Recommend: CS450 or CS550)</small>
         </div>
 
 
@@ -192,138 +184,138 @@
     <div class="card-body">
         <h6><b>Theoretical Computer Science</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS515 | ALGORITHMS AND DATA STRUCTURES
             </label>
         </div>
 
         <h6 class="plan-course-name"><b>Artificial Intelligence</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS534 | MACHINE LEARNING
             </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS539 | EMBODIED AI
             </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS539 | EMBODIED LG-SCALE CONVEX/NONCON OPT
             </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS539 | NATURAL LANG PROCESSING
             </label>
         </div>
 
         <h6 class="plan-course-name"><b>Computer Systems</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS572 | COMPUTER ARCHITECTURE
-                <small class="text-muted">(Recommend: ECE375)</small>
             </label>
+            <small class="text-muted">(Recommend: ECE375)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS579 | CYBER ATTACKS & DEFENSE
-                <small class="text-muted">(Recommend: CS575 or CS572 or ECE572)</small>
             </label>
+            <small class="text-muted">(Recommend: CS575 or CS572 or ECE572)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS579 | CYBER-PHYSICAL SYSTEMS
-                <small class="text-muted">(Recommend: CS575 or CS572 or ECE572)</small>
             </label>
+            <small class="text-muted">(Recommend: CS575 or CS572 or ECE572)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS579 | GPU ARCHITECTURE
-                <small class="text-muted">(Recommend: CS575 or CS572 or ECE572)</small>
             </label>
+            <small class="text-muted">(Recommend: CS575 or CS572 or ECE572)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS579 | SYSTEMS SECURITY
-                <small class="text-muted">(Recommend: CS575 or CS572 or ECE572)</small>
             </label>
+            <small class="text-muted">(Recommend: CS575 or CS572 or ECE572)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS544 | OPERATING SYSTEMS II
-                <small class="text-muted">(Recommend: (CS311 or CS344) and (CS271 or ECE375))</small>
             </label>
+            <small class="text-muted">(Recommend: (CS311 or CS344) and (CS271 or ECE375))</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 ECE573 | MICROCONTROLLER SYSTEM DESIGN
-                <small class="text-muted">(Recommend: ECE 322 and ECE 375 and CS 261)</small>
             </label>
+            <small class="text-muted">(Recommend: ECE 322 and ECE 375 and CS 261)</small>
         </div>
 
         <h6 class="plan-course-name"><b>Programming Languages</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS581 | PROGRAMMING LANGUAGES I
             </label>
         </div>
 
         <h6 class="plan-course-name"><b>Software Engineering</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS561 | SOFTWARE ENGINEERING METHODS
-                <small class="text-muted">(Recommend: CS362)</small>
             </label>
+            <small class="text-muted">(Recommend: CS362)</small>
         </div>
 
         <h6 class="plan-course-name"><b>Human Computer Interaction</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS567 | LABORATORY STUDIES IN SE AND HCI
             </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS568 | INCLUSIVE DESIGN (HCL)
-                <small class="text-muted">(Recommend: CS352 [C] or CS565 [C])</small>
             </label>
+            <small class="text-muted">(Recommend: CS352 [C] or CS565 [C])</small>
         </div>
 
         <h6 class="plan-course-name"><b>Computer Vision and Graphics</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS550 | INTRODUCTION TO COMPUTER GRAPHICS
-                <small class="text-muted">(Recommend: CS261 and (MTH306 or MTH306H or MTH341))</small>
             </label>
+            <small class="text-muted">(Recommend: CS261 and (MTH306 or MTH306H or MTH341))</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS553 | SCIENTIFIC VISUALIZATION
             </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="fall" onclick="check()">
+            <label class="form-check-label">
                 CS559 | DIGITAL IMAGE PROCESSING
             </label>
         </div>
@@ -339,140 +331,193 @@
     <div class="card-body">
         <h6><b>Theoretical Computer Science</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS520 | GRAPH THEORY WITH APPLICATIONS TO COMPUTER SCIENCE
-                <small class="text-muted">(Recommend: CS325 and MTH232)</small>
             </label>
+            <small class="text-muted">(Recommend: CS325 and MTH232)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS527 | ERROR-CORRECTING CODES
             </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS529 | CRYPTOGRAPHY
-                <small class="text-muted">(Recommend: CS515)</small>
             </label>
+            <small class="text-muted">(Recommend: CS515)</small>
         </div>
 
         <h6 class="plan-course-name"><b>Artificial Intelligence</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS517 | THEORY OF COMPUTATION
             </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS535 | DEEP LEARNING
-                <small class="text-danger">(Prerequisites: CS534 or ROB537)</small>
             </label>
+            <small class="text-danger">(Prerequisites: CS534 or ROB537)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS536 | PROBABILISTIC GRAPHICAL MODELS
             </label>
         </div>
 
         <h6 class="plan-course-name"><b>Computer Systems</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS576 | ADVANCED COMPUTER NETWORKING
-                <small class="text-muted">(Recommend: (CS372 or ECE372) and (ECE353 or ST314 or ST314H))</small>
             </label>
+            <small class="text-muted">(Recommend: (CS372 or ECE372) and (ECE353 or ST314 or ST314H))</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS579 | USABLE SECURITY
-                <small class="text-muted">(Recommend: CS575 or CS572 or ECE572)</small>
             </label>
+            <small class="text-muted">(Recommend: CS575 or CS572 or ECE572)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS540 | DATABASE MANAGEMENT SYSTEMS
-                <small class="text-muted">(Recommend: CS261)</small>
             </label>
+            <small class="text-muted">(Recommend: CS261)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS546 | NETWORKS IN COMPUTATIONAL BIOLOGY
-                <small class="text-muted">(Recommend: Completion or concurrent enrollment in CS325)</small>
             </label>
+            <small class="text-muted">(Recommend: Completion or concurrent enrollment in CS325)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 ECE571 | ENERGY-EFFICIENT VLSI DESIGN
-                <small class="text-muted">(Recommend: ECE271 and ECE322 and completion or concurrent enrollment in
-                    ECE323 (all with a minimum grade of C))</small>
             </label>
+            <small class="text-muted">(Recommend: ECE271 and ECE322 and completion or concurrent enrollment in
+                    ECE323 (all with a minimum grade of C))</small>
         </div>
 
         <h6 class="plan-course-name"><b>Programming Languages</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS582 | PROGRAMMING LANGUAGES II
-                <small class="text-danger">(Prerequisite: CS581)</small>
             </label>
+            <small class="text-danger">(Prerequisite: CS581)</small>
         </div>
 
         <h6 class="plan-course-name"><b>Software Engineering</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS562 | SOFTWARE PROJECT MANAGEMENT
-                <small class="text-muted">(Recommend: CS362)</small>
             </label>
+            <small class="text-muted">(Recommend: CS362)</small>
         </div>
 
         <h6 class="plan-course-name"><b>Computer Vision and Graphics</b></h6>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS552 | COMPUTER ANIMATION
-                <small class="text-muted">(Recommend: CS551)</small>
             </label>
+            <small class="text-muted">(Recommend: CS551)</small>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS557 | COMPUTER GRAPHICS SHADERS
             </label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">
+            <input class="form-check-input" type="checkbox" name="multiple" value="winter" onclick="check()"/>
+            <label class="form-check-label">
                 CS559 | NUMERICAL MODELING
             </label>
+
         </div>
 
     </div>
 </div>
 <br>
-    <button id="confirm" type="button" class="btn btn-primary btn-lg">Confirm</button>
-<p id="credit">Credit: 0</p>
-<<<<<<< HEAD
 
-<h2>This is a heading</h2>
 
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
+<!-- Large modal -->
+<!--.bd-example-modal-lg-->
+<div class="fixed-bottom">
+<button type="button" class="btn btn-primary large_custom" data-toggle="modal" data-target="#myModal">Confirm</button>
+</div>
 
-<button>Click me</button>
-=======
->>>>>>> 7ec0df9e379cef1a0a05c3aebddd9fda5269a02c
-<!--</form>-->
+<!-- 模态框（Modal） -->
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" id="myModal">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">My plan</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                    <tr id="table_head">
+                        <th scope="col">Spring</th>
+                        <th scope="col">Fall</th>
+                        <th scope="col">Winter</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr id="course1">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="course2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="course3">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="course4">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+
+                </table>
+
+                <div class="total_credit">
+                    <h6 id = "credit">Total credit: 36</h6>
+                </div>
+
+            </div>
+<!--            <div class="modal-footer">-->
+<!--                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--                <button type="button" class="btn btn-primary">Save changes</button>-->
+<!--            </div>-->
+        </div>
+    </div>
+</div>
 
 
 

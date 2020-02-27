@@ -1,30 +1,130 @@
-function Submit() {
-    //document.querySelector("li") 找到第一个返回给你
-    alert();
-    //通过class选所有元素
-    document.querySelectorAll("input.form-check-input")
-    //通过tag选: ("li")
-    //通过特定id下的li选： （"#id li"）
+// shown: 先出模态框；show:先出alert
+$(function() {
+    $('#myModal').on('shown.bs.modal', function() {
+        reset_form();
+
+        $("input[name='multiple']:checked").each(function() {
+            let term = $(this).val();
+
+            // 如果是spring term的课，判断form里的单元格是否为空
+            if (term ==="spring") {
+                if ( $("tr#course1").children("td:eq(0)").text()==="" ) {
+                    $("tr#course1").children("td:eq(0)").text( $(this).next("label").text() );
+                }
+                else if ( $("tr#course2").children("td:eq(0)").text()==="" ) {
+                    $("tr#course2").children("td:eq(0)").text( $(this).next("label").text() );
+                }
+                else if ( $("tr#course3").children("td:eq(0)").text()==="" ) {
+                    $("tr#course3").children("td:eq(0)").text( $(this).next("label").text() );
+                }
+                else if ( $("tr#course4").children("td:eq(0)").text()==="" ) {
+                    $("tr#course4").children("td:eq(0)").text( $(this).next("label").text() );
+                }
+
+            }
+            if (term ==="fall") {
+
+                if ( $("tr#course1").children("td:eq(1)").text()==="" ) {
+                    $("tr#course1").children("td:eq(1)").text( $(this).next("label").text() );
+                }
+                else if ( $("tr#course2").children("td:eq(1)").text()==="" ) {
+                    $("tr#course2").children("td:eq(1)").text( $(this).next("label").text() );
+                }
+                else if ( $("tr#course3").children("td:eq(1)").text()==="" ) {
+                    $("tr#course3").children("td:eq(1)").text( $(this).next("label").text() );
+                }
+                else if ( $("tr#course4").children("td:eq(1)").text()==="" ) {
+                    $("tr#course4").children("td:eq(1)").text( $(this).next("label").text() );
+                }
+
+            }
+            if (term ==="winter") {
+
+                if ( $("tr#course1").children("td:eq(2)").text()==="" ) {
+                    $("tr#course1").children("td:eq(2)").text( $(this).next("label").text() );
+                }
+                else if ( $("tr#course2").children("td:eq(2)").text()==="" ) {
+                    $("tr#course2").children("td:eq(2)").text( $(this).next("label").text() );
+                }
+                else if ( $("tr#course3").children("td:eq(2)").text()==="" ) {
+                    $("tr#course3").children("td:eq(2)").text( $(this).next("label").text() );
+                }
+                else if ( $("tr#course4").children("td:eq(2)").text()==="" ) {
+                    $("tr#course4").children("td:eq(2)").text( $(this).next("label").text() );
+                }
+
+            }
+
+            // calculate total credit
+            let credit = $("input[name='multiple']:checked").length * 4
+            $("h6#credit").text( "Total credit: " + credit );
 
 
-    document.querySelector("#confirm").addEventListener("click", function () {
-        alert();
-    });
+	    });
+    })
+});
 
-    document.querySelector("#credit").addEventListener()
+function reset_form() {
+    $("tr#course1").children("td:eq(0)").text("");
+    $("tr#course1").children("td:eq(1)").text("");
+    $("tr#course1").children("td:eq(2)").text("");
+
+    $("tr#course2").children("td:eq(0)").text("");
+    $("tr#course2").children("td:eq(1)").text("");
+    $("tr#course2").children("td:eq(2)").text("");
+
+    $("tr#course3").children("td:eq(0)").text("");
+    $("tr#course3").children("td:eq(1)").text("");
+    $("tr#course3").children("td:eq(2)").text("");
+
+    $("h6#credit").text( "Total credit: " + 0 );
+}
+
+function check() {
+    //判断春节，最多选4门课，超过4门课，设置复选框为不可选状态
+    if ( $("input[value='spring']:checked").length === 4 ) {
+        $("input[value='spring']:not(:checked)").each(function () {
+            $("input[value='spring']:not(:checked)").attr("disabled", "disabled")
+        })
+    }
+    else {
+        $("input[value='spring']:not(:checked)").each(function () {
+            $("input[value='spring']:not(:checked)").removeAttr("disabled")
+        })
+    }
+
+    if ( $("input[value='fall']:checked").length === 4 ) {
+        $("input[value='fall']:not(:checked)").each(function () {
+            $("input[value='fall']:not(:checked)").attr("disabled", "disabled")
+        })
+    }
+    else {
+        $("input[value='fall']:not(:checked)").each(function () {
+            $("input[value='fall']:not(:checked)").removeAttr("disabled")
+        })
+    }
+
+    if ( $("input[value='winter']:checked").length === 4 ) {
+        $("input[value='winter']:not(:checked)").each(function () {
+            $("input[value='winter']:not(:checked)").attr("disabled", "disabled")
+        })
+    }
+    else {
+        $("input[value='winter']:not(:checked)").each(function () {
+            $("input[value='winter']:not(:checked)").removeAttr("disabled")
+        })
+    }
+
 }
 
 
-<<<<<<< HEAD
 
-$(document).ready(function(){
-  $("button").click(function(){
-    $("p").hide();
-  });
-});
 
-=======
->>>>>>> 7ec0df9e379cef1a0a05c3aebddd9fda5269a02c
+
+
+
+
+
 //JS回顾：
 //字符串
 console.log("hello".length);
