@@ -29,6 +29,12 @@ h7 {
     line-height: 2;
 }
 
+.time_text {
+    font-size: 16px;
+    color: #6C757D;
+    padding-left: 0.5em;
+}
+
 .select-level {
     /*background-color: antiquewhite;*/
     margin: 1em 0px 0em;
