@@ -177,3 +177,11 @@ a:hover {
 .large_custom {
     width:20em;
 }
+
+.table-bordered {
+    table-layout: fixed;
+}
+
+.table-bordered td{
+    word-break: break-all;
+}
